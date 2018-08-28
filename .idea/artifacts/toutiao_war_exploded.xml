@@ -60,7 +60,15 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.2.6.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:4.2.6.RELEASE" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.38" />
-          <element id="library" level="project" name="Maven: org.mybaits.spring.boot:mybatis-spring-boot-starter:unknown" />
+          <element id="library" level="project" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-starter:1.1.1" />
+          <element id="library" level="project" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:1.1.1" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.4.0" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:1.3.0" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:1.3.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-jdbc:8.0.33" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-juli:8.0.33" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.2.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.2.6.RELEASE" />
         </element>
       </element>
       <element id="directory" name="META-INF">
