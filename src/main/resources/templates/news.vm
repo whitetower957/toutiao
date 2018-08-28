@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+要来一杯快乐肥宅水吗
+##单行注释
+#*
+多行注释
+*#
+$!{value1}
+##如果值不存在就不显示
+$!{value2}
+${value3}
+
+#foreach($color in $colors)
+Color $!{foreach.index}/$!{foreach.count}:$!{color}
+#end
+
+#foreach($key in $map.keySet())
+    Number $!{foreach.index}/$!{foreach.count}:$!{key} $map.get($key)
+#end
+
+#foreach($kv in $map.entrySet())
+Number $!{foreach.index}/$!{foreach.count}:$!{kv.key} $!{kv.value}
+#end
+
+$!{user.name}
+$!{user.getName()}
+
+#set($title = "coco cola")<br>
+#include("header.vm")<br>
+#parse("header.vm")
+
+#macro(render_color,$color,$index)
+    Color by Macro $index,$color
+#end
+#foreach($color in $colors)
+    #render_color($color,$foreach.index)
+#end
+</pre>
+</body>
+</html>
