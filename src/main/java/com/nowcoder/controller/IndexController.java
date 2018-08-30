@@ -21,7 +21,7 @@ import java.util.*;
 /**
  * Created by nowcoder on 2016/6/26.
  */
-@Controller
+//@Controller
 public class IndexController {
     @Autowired
     private ToutiaoService toutiaoService;

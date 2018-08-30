@@ -50,7 +50,7 @@ public class InitDatabaseTests {
         }
 //        测试用来判断是否相等
 //        Assert.assertEquals("cola",userDao.selectById(1).getPassword());
-        userDao.deleteById(1);
+//        userDao.deleteById(1);
 //        Assert.assertEquals("cola",userDao.selectById(1).getPassword());
     }
 }
