@@ -32,7 +32,7 @@ public class LogAspect {
         logger.info("before time:" + new Date());
     }
 
-    @After("execution(* com.nowcoder.controller.*Controller.*(..))")
+    @After("execution(* com.nowcoder.controller.IndexController.*(..))")
     public void afterMethod(JoinPoint joinPoint){
 //        打印切点参数信息
         logger.info("after method: ");
