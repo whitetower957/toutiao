@@ -24,7 +24,7 @@ public class LoginController {
 
     @Autowired
     UserService userService;
-
+//    首页
     @RequestMapping(path = {"/reg/"}, method = {RequestMethod.GET, RequestMethod.POST})
     @ResponseBody
     public String index(Model model, @RequestParam("username") String username,
@@ -50,7 +50,7 @@ public class LoginController {
                 return ToutiaoUtil.getJSONString(1,"注册异常");
             }
     }
-
+//  登录
     @RequestMapping(path = {"/login/"}, method = {RequestMethod.GET, RequestMethod.POST})
     @ResponseBody
     public String login(Model model, @RequestParam("username") String username,
@@ -76,8 +76,12 @@ public class LoginController {
             return ToutiaoUtil.getJSONString(1,"注册异常");
         }
     }
-
-
+//  登出
+    @RequestMapping(path = {"/logout/"}, method = {RequestMethod.GET, RequestMethod.POST})
+    public String logout(@CookieValue("ticket") String ticket){
+        userService.logout(ticket);
+        return "redirect:/";
+    }
 
 
 }
