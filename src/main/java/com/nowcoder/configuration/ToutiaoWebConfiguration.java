@@ -14,6 +14,7 @@ public class ToutiaoWebConfiguration extends WebMvcConfigurerAdapter{
     @Autowired
     LoginRequiredInterceptor loginRequiredInterceptor;
 
+
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(passportInterceptor);
