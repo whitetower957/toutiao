@@ -2,6 +2,7 @@ package com.nowcoder.dao;
 
 import com.nowcoder.model.News;
 import org.apache.ibatis.annotations.*;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

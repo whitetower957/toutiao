@@ -2,6 +2,7 @@ package com.nowcoder.dao;
 
 import com.nowcoder.model.User;
 import org.apache.ibatis.annotations.*;
+import org.springframework.stereotype.Repository;
 
 @Mapper
 public interface UserDao {

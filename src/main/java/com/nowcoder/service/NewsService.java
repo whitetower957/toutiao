@@ -47,4 +47,8 @@ public class NewsService {
     public News getById(int newsId){
         return newsDao.getById(newsId);
     }
+
+    public int updateCommentCount(int id, int count) {
+        return newsDao.updateCommentCount(id, count);
+    }
 }
